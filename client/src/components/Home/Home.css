@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.HomePage{
+    background-color: #DAFFFB;
+    height: 100vh;
+
+}
+
+.HomeBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.imgbottom1{
+    width: 800px;
+    height: 500px;
+    border-radius: 265px;
+    
+}
+
+.bottomtext{
+    width: 40%;
+    font-weight: 900;
+    font-size: 40px;
+    font-weight: lighter;
+    
+}
+.saidby{
+    font-size: 30px;
+}
+
+.virtual
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
+    
+}
+
+.consult{
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin: 30px;
+    background-color: #4F709C;
+    color: white;
+    font-weight: 600;
+}
+
+.consult:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    background-color: #64CCC5;
+}
+
+
+
+
