@@ -60,7 +60,8 @@
 
             margin-top: 20px;
             margin-bottom: 20px;
-            font-size: 15px;
+            font-size: 18px;
+            font-weight: bold;
 
         }
 
@@ -68,7 +69,8 @@
             
             margin-top: 20px;
             margin-bottom: 20px;
-            font-size: 15px;
+            font-size: 18px;
+            font-weight: bold;
 
                 
 
@@ -78,16 +80,28 @@
 
             margin-top: 20px;
             margin-bottom: 20px;
-            font-size: 15px;
+            font-size: 18px;
+            font-weight: bold;
 
+        }
+        .sathi{
+            color:black;
+            font-size: larger;
+            font-weight: bolder;
         }
 
         .medic{
 
             margin-top: 20px;
             margin-bottom: 20px;
-            font-size: 15px;
+            font-size: 18px;
+            font-weight: bold;
 
+        }
+        .head{
+            font-weight: bolder;
+            color:rgb(38, 186, 43);
+            font-size: 20px;
         }
        
 
@@ -96,6 +110,7 @@
 
 </head>
 <body>
+    <h1>Hello, <span class = "sathi">SAATHI !</span>👋</h1>
     <h1 class="">Please Input Image of the Affected Area.</h1>
 
 
@@ -109,9 +124,9 @@
     {% if prediction %}
         <p class="text-center"> 
             {% if prediction ==0 %}
-               <h1>Disease is Actinic kerastoses</h1>
+               <h1>Disease is<u> Actinic kerastoses</u></h1>
                <div><img src="Sathi/client/src/components/Mlpage/templates/MlPage/imagesISIC_0024307.jpg" alt="sdfd" class="src"></div> 
-               <div class="symptoms"><b class="head"> 1. Symptoms of Actinic Keratosis:</b>
+               <div class="symptoms"><b class="head"> 1. <u>Symptoms of Actinic Keratosis</u>:</b>
 
                 Rough, scaly, dry patches on the skin.
                 Pink, red, or flesh-colored lesions.
@@ -120,7 +135,7 @@
             </div>
 
             <div class="remedy">
-               <b class="head"> 2. Remedies and Management:</b>
+               <b class="head"> 2. <u>Remedies and Management</u>:</b>
                 
                 Sun Protection: The primary approach to preventing actinic keratosis and its further development is sun protection. This includes using sunscreen, wearing protective clothing like long sleeves and wide-brimmed hats, and seeking shade during peak sunlight hours.
                 Topical Treatments: Your doctor may prescribe topical treatments such as fluorouracil cream, imiquimod cream, ingenol mebutate gel, or diclofenac gel to apply to the affected areas. These medications can help to remove or treat the lesions.
@@ -132,7 +147,7 @@
             </div>
 
             <div class="further">
-               <b class="head"> 3. Further Development:</b>
+               <b class="head"> 3. <u> Further Development</u>:</b>
                 
                 Without proper management, actinic keratosis can progress to squamous cell carcinoma, a type of skin cancer. It is essential to monitor and treat these lesions promptly to reduce the risk of malignant transformation.
                 Some actinic keratosis lesions may resolve on their own, but many persist or worsen without treatment.
@@ -141,7 +156,7 @@
 
 
             <div class="medic"></div>
-               <b class="head"> 4. Medication:</b>
+               <b class="head"> 4. <u>Medication</u>:</b>
                 
                 Medications, both topical and oral, can be prescribed by a healthcare professional to treat actinic keratosis. These medications work to destroy the abnormal skin cells and stimulate the growth of healthy skin cells. Commonly prescribed topical medications include:
                 Fluorouracil (5-FU) cream
@@ -154,13 +169,13 @@
                  complications associated with actinic keratosis.</div>
             {% endif %}
             {% if prediction ==1 %}
-               <h1>Disease is Basal cell carcinoma</h1>
+               <h1>Disease is <u>Basal cell carcinoma</u></h1>
 
 
                
                <div class="symptoms">
                
-               <b class="head">1. Symptoms of Basal Cell Carcinoma:</b>
+               <b class="head">1. <u> Symptoms of Basal Cell Carcinoma</u>:</b>
 
                 Pearly or waxy bump on the skin.
                 A sore that continuously oozes or bleeds and doesn't heal.
@@ -172,7 +187,7 @@
             </div>
 
             <div class="remedy">
-               <b class="head"> 2. Remedies and Management:</b>
+               <b class="head"> 2. <u>Remedies and Management</u>:</b>
                 
                 Surgical Removal: The most common and effective treatment for basal cell carcinoma is surgical removal. There are several techniques, including:
                 Excision: The tumor is cut out along with a margin of healthy tissue.
@@ -185,7 +200,7 @@
             </div>
 
             <div class="further">
-               <b class="head"> 3. Further Development:</b>
+               <b class="head"> 3. <u>Further Development</u>:</b>
                 
                 Basal cell carcinoma typically grows slowly and tends to remain localized. However, if left untreated, it can invade surrounding tissues, cause significant disfigurement, and, in rare cases, become more aggressive.
                 Early detection and treatment are essential to prevent further development and complications.
@@ -193,17 +208,17 @@
             </div>
 
             <div class="medic">
-               <b class="head"> 4. Medication:</b>
+               <b class="head"> 4. <u>Medication</u>:</b>
                 
                 Medications are not typically the first line of treatment for basal cell carcinoma, but they can be considered for specific cases. Some medications, such as vismodegib and sonidegib, are FDA-approved for treating advanced basal cell carcinoma. These drugs are used when surgery or radiation therapy is not an option or when the cancer has spread to other parts of the body.
                 Immunotherapies, such as cemiplimab, have also shown promise in treating advanced cases of basal cell carcinoma.</div>
             {% endif %}
             {% if prediction ==2 %}
-               <h1>Disease is Benign keratosis like lesions</h1>
+               <h1>Disease is <u>Benign keratosis like lesions</u></h1>
                
                <div class="symptom">
                
-               <b class="head">1. Symptoms of Benign Keratosis-Like Lesions:</b>
+               <b class="head">1. <u>Symptoms of Benign Keratosis-Like Lesions</u>:</b>
 
                 Raised, waxy, or "stuck-on" appearance.
                 Colors can vary but are often tan, brown, black, or sometimes light in color.
@@ -214,7 +229,7 @@
             </div>
 
             <div class="remedy">
-               <b class="head"> 2. Remedies and Management:</b>
+               <b class="head"> 2.<u>Remedies and Management</u>:</b>
                 
                 Benign keratosis-like lesions are harmless and don't typically require treatment unless they cause discomfort, itchiness, or are considered unsightly.
                 If the lesions are bothersome, they can be removed for cosmetic reasons. Removal methods include:
@@ -229,7 +244,7 @@
 
 
             <div class="further">
-               <b class="head"> 3. Further Development:</b>
+               <b class="head"> 3. <u>Further Development</u>:</b>
                 
                 Benign keratosis-like lesions are non-cancerous and do not develop into skin cancer. They typically grow slowly over time but do not become malignant or metastasize.
                 If you notice rapid changes in the appearance of a skin lesion, such as bleeding, sudden growth, or other concerning features, it's important to consult a dermatologist, as it may indicate a different skin condition.
@@ -238,20 +253,20 @@
 
 
             <div class="medic">
-               <b class="head"> 4. Medication:</b>
+               <b class="head"> 4. <u>Medication</u>:</b>
                 
                 Medication is not typically used to treat benign keratosis-like lesions. They are primarily managed through physical removal methods when necessary for cosmetic or comfort reasons.
                 While benign keratosis-like lesions are generally harmless, it's essential to have any new or changing skin growths examined by a healthcare provider or dermatologist. They can provide a proper diagnosis and recommend the most suitable course of action, whether it's monitoring the lesion or performing a procedure to remove it. It's also important to continue regular skin checks and practice sun protection to reduce the risk of developing other skin conditions.
             </div>
             {% endif %}
             {% if prediction ==3 %}
-               <h1>Disease is Dermatofibroma</h1>
+               <h1>Disease is<u> Dermatofibroma</u></h1>
                
                <img src="imagesISIC_0024307.jpg" alt="" class="src">
                
                <div class="symptoms">
 
-               <b class="head">1. Symptoms of Dermatofibroma:</b>
+               <b class="head">1. <u>Symptoms of Dermatofibroma</u>:</b>
 
                 Small, firm, brown or reddish-brown bump or nodule on the skin.
                 Typically painless but may be itchy or tender when touched.
@@ -262,7 +277,7 @@
             </div>
 
             <div class="remedy">
-               <b class="head"> 2. Remedies and Management:</b>
+               <b class="head"> 2. <u>Remedies and Management</u>:</b>
                 
                 Most dermatofibromas are harmless and don't require treatment. They are usually left alone unless they become painful, itchy, or bothersome.
                 If necessary, a dermatofibroma can be surgically removed through a simple excision procedure. The excision should be performed by a dermatologist or healthcare provider.
@@ -270,7 +285,7 @@
 
 
             <div class="further">
-               <b class="head"> 3. Further Development:</b>
+               <b class="head"> 3.<u>Further Development</u>:</b>
                 
                 Dermatofibromas are typically benign and do not develop into cancer. They tend to remain stable in size and appearance.
                 In rare cases, they may grow slightly over time, but this growth is usually very slow and not a cause for concern.
@@ -278,18 +293,18 @@
             </div>
 
             <div class="medic">
-               <b class="head"> 4. Medication:</b>
+               <b class="head"> 4. <u>Medication</u>:</b>
                 
                 Medication is generally not used to treat dermatofibromas. Surgical excision is the primary treatment option when removal is required.</div>
 
             {% endif %}
             {% if prediction ==4 %}
-               <h1>Disease is Melanoma</h1>
+               <h1>Disease is<u>Melanoma</u></h1>
                <img src="imagesISIC_0024307.jpg" alt="" class="src">
                
                <div class="symptoms">
                
-               <b class="head">1. Symptoms of Melanoma:</b>
+               <b class="head">1. <u>Symptoms of Melanoma</u>:</b>
 
                 Melanoma can appear as an irregular, asymmetrical, and often multicolored mole or lesion on the skin.
                 Common signs of melanoma include changes in the shape, size, color, or texture of an existing mole or the appearance of a new, unusual mole.
@@ -304,7 +319,7 @@
 
 
             <div class="remedy">
-               <b class="head"> 2. Remedies and Management:</b>
+               <b class="head"> 2. <u>Remedies and Management</u>:</b>
                 
                 Early diagnosis and treatment are critical for melanoma. If you notice any suspicious skin changes or symptoms, consult a dermatologist promptly.
                 Treatment options for melanoma depend on the stage of the cancer but may include:
@@ -320,7 +335,7 @@
 
 
             <div class="further">
-               <b class="head"> 3. Further Development:</b>
+               <b class="head"> 3. <u>Further Development</u>:</b>
                 
                 Without prompt treatment, melanoma can grow deeper into the skin and spread to other parts of the body, making it more difficult to treat and potentially life-threatening.
                 The prognosis and outcomes depend on the stage at which melanoma is diagnosed. Early-stage melanomas have a much higher chance of successful treatment and cure.
@@ -329,18 +344,18 @@
 
 
             <div class="medic">
-               <b class="head"> 4. Medication:</b>
+               <b class="head"> 4.<u>Medication</u>:</b>
                 
                 Medications for melanoma are typically used for advanced stages of the disease or when surgery is not an option. These may include immunotherapies and targeted therapies, as mentioned earlier.
             </div>
             {% endif %}
             {% if prediction ==5 %}
-               <h1>Disease is Melanocytic nevi</h1>
+               <h1>Disease is <u>Melanocytic nevi</u></h1>
                <img src="imagesISIC_0024307.jpg" alt="" class="src">
            
            <div class="sympotoms">
            
-               <b class="head">1. Symptoms of Melanocytic Nevi (Moles):</b>
+               <b class="head">1. <u>Symptoms of Melanocytic Nevi (Moles)</u>:</b>
 
                 Moles are typically small, round or oval, and can vary in color, including brown, black, or skin-colored.
                 They are generally flat or slightly raised and have a well-defined border.
@@ -350,7 +365,7 @@
             </div>
 
             <div class="remedy">
-               <b class="head"> 2. Remedies and Management:</b>
+               <b class="head"> 2. <u>Remedies and Management</u>:</b>
                 
                 Most moles are benign and do not require treatment. They can be left alone if they are not causing any symptoms or are not of cosmetic concern.
                 If you notice changes in a mole's appearance, have it examined by a dermatologist. Changes that may raise concern include asymmetry, irregular borders, variation in color, diameter larger than a pencil eraser, or evolution (changes over time).
@@ -361,7 +376,7 @@
 
 
             <div class="further">
-               <b class="head"> 3. Further Development:</b>
+               <b class="head"> 3. <u>Further Development</u>:</b>
                 
                 Most melanocytic nevi remain stable and do not change over time. They are benign and typically do not develop into skin cancer.
                 However, certain types of moles, particularly atypical or dysplastic nevi, have a slightly increased risk of transforming into melanoma. Regular skin checks are important to monitor any changes in moles.
@@ -369,7 +384,7 @@
             </div>
 
             <div class="medic">
-               <b class="head"> 4. Medication:</b>
+               <b class="head"> 4.<u>Medication</u>:</b>
                 
                 Medication is not typically used to treat melanocytic nevi, as they are benign growths. Any medical intervention, if required, usually involves removal or biopsy to ensure they are not cancerous.
                 
@@ -383,7 +398,7 @@
                
                <div class="symptoms">
                
-             <b class="head">  1. Symptoms of Vascular Lesions:</b>
+             <b class="head">  1. <u>Symptoms of Vascular Lesions</u>:</b>
 
                 The symptoms of vascular lesions can vary depending on the type of lesion. Common symptoms may include:
                 Red or purple discoloration of the skin.
@@ -397,7 +412,7 @@
 
 
             <div class="remedy">
-             <b class="head">   2. Remedies and Management:</b>
+             <b class="head">   2. <u>Remedies and Management</u>:</b>
                 
                 The management and treatment of vascular lesions depend on the specific type of lesion and its characteristics.
                 Common treatment options for vascular lesions may include:
@@ -411,7 +426,7 @@
 
 
             <div class="further">
-             <b class="head">   3. Further Development:</b>
+             <b class="head">   3. <u>Further Development</u>:</b>
                 
                 Vascular lesions can persist and even become more prominent over time if left untreated.
                 In some cases, they can be associated with other underlying medical conditions, so it's important to consult a dermatologist or healthcare provider for a proper evaluation.
@@ -419,7 +434,7 @@
             </div>
 
             <div class="medic">
-             <b class="head">   4. Medication:</b>
+             <b class="head">   4. <u>Medication</u>:</b>
                 
                 Medications are not commonly used to treat vascular lesions directly. Instead, treatment methods like laser therapy, sclerotherapy, and surgery are typically employed.
                 
