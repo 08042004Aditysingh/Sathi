@@ -27,6 +27,7 @@ def predict():
     X1 = X1/255.
 
     X2 = X1.reshape((1, 32, 32, 3))
+    print(type(X2))
     y_pred = model.predict(X2)
     y_pred_classes = np.argmax(y_pred, axis = 1) 
     print(y_pred_classes)

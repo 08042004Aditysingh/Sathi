@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SignUp from "./components/LOGIN/register/Signup";
 import Login from "./components/LOGIN/login/Login";
-import Mlpage from "./components/Mlpage/Mlpage";
+
 import Home from "./components/Home/Home";
 import AboutUs from "./components/ABOUT/About"
 import VC from "./components/vc/vc2"
@@ -15,7 +15,11 @@ function App() {
         <Route path="/" element={<SignUp/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/home" element={<Home/>}></Route>
+<<<<<<< HEAD
         {/* <Route path="/Mlpage" element={<Mlpage/>}></Route> */}
+=======
+      
+>>>>>>> 73d3301ad40868f5150e3c3815e59c35d8bf44d4
         <Route path="/aboutus" element={<AboutUs/>}></Route>
         <Route path="/vc" element={<VC/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>

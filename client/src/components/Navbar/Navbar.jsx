@@ -29,7 +29,11 @@ const Navbar = () => {
       <a href='http://127.0.0.1:5500'><button className='ab'>
       <span class="button_top"> 
       
+<<<<<<< HEAD
        SCAN/ANALYSE 
+=======
+      <a href='http://127.0.0.1:5500'> SCAN/ANALYSE </a>
+>>>>>>> 73d3301ad40868f5150e3c3815e59c35d8bf44d4
         </span>
         </button></a>
 
