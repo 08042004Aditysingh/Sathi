@@ -9,6 +9,7 @@ app.use(cors())
 
 mongoose.connect("mongodb://127.0.0.1:27017/Employe");
 
+
 app.post("/login",(req,res)=>{
     const {email,password} = req.body;
     EmployeeModel.findOne({email:email})
@@ -16,6 +17,7 @@ app.post("/login",(req,res)=>{
         if(user){
             if(user.password === password){
                 res.json("Success")
+
                 
             }else{
                 res.json("The password is incorrect")
@@ -33,6 +35,6 @@ app.post('/register',(req,res)=>{
 
 })
 
-app.listen(3001,()=>{
+app.listen(3006,()=>{
     console.log("server is running")
 })
