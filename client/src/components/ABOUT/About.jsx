@@ -1,4 +1,3 @@
-
 import Navbar from '../Navbar/Navbar'
 import './About.css'
 import Reviews from './Review'
@@ -12,7 +11,7 @@ const About = () => {
 
     <div className='Aboutpage'>
 
-       <div className=""> <Navbar/></div>
+       <div className="top-bar"> <Navbar/></div>
 
 
        <div className="aboutbut">
