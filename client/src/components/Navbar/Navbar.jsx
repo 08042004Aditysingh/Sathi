@@ -16,7 +16,7 @@ const Navbar = () => {
 
             <li><a href="/home">HOME</a></li>
             <li><a href="/aboutus">ABOUT US</a></li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a href="/contact">CONTACT US</a></li>
             <li><a href="#">BLOG</a></li>
 
             </ul>
@@ -26,12 +26,12 @@ const Navbar = () => {
 
       <div className="right">
 
-      <button className='ab'>
+      <a href='http://127.0.0.1:5500'><button className='ab'>
       <span class="button_top"> 
       
-      <a href='/Mlpage'> SCAN/ANALYSE </a>
+       SCAN/ANALYSE 
         </span>
-        </button>
+        </button></a>
 
       </div>
 

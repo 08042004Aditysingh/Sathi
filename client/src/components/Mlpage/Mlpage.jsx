@@ -1,46 +1,37 @@
-import React, { useEffect } from 'react'
-import Navbar from '../Navbar/Navbar'
-import './Mlpage.css'
+import React, { useState } from 'react';
 
-const Mlpage = () => {
+function Mlpage() {
+  const [prediction, setPrediction] = useState(null);
 
-  useEffect(()=>{
-    fet
-  },[])
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const formData = new FormData();
+      formData.append("imagefile", file);
+
+      fetch("http://localhost:5500", {
+        method: "POST",
+        body: formData,
+      })
+      .then(response => response.json())
+      .then(data => {
+        setPrediction(data.prediction);
+      })
+      .catch(error => {
+        console.error("Error fetching data:", error);
+      });
+    }
+  };
 
   return (
-    <>
-    <div className="machine">
-    <Navbar/>
-
-
-    <div className="machinebut">
-
-      <h2>Please Input Image of the Affected Area.</h2>
-
-      <div className="mlinput">
-
-
-     <button className='mli'><label className='lab' for="file" >+</label></button> 
-      <input type='file' className='addfile' id='file'/>
-      </div>
-
-      <div className="scanbut">
-
-      <button className='butt'> SCAN</button>
-
-      </div>
-
-
+    <div>
+      <h1>Image Prediction</h1>
+      <input type="file" id="imageUpload" accept="image/*" onChange={handleFileChange} />
+      <input type="submit" value="Predict Image" ></input>
+      {prediction && <p>Image is a {prediction}</p>}
     </div>
-
-    </div>
-
-
-    
-    
-    </>
-  )
+  );
 }
 
-export default Mlpage
+export default Mlpage;
+
