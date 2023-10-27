@@ -29,7 +29,7 @@ const Navbar = () => {
       <button className='ab'>
       <span class="button_top"> 
       
-      <a href='#mlmodel'> SCAN/ANALYSE </a>
+      <a href='/Mlpage'> SCAN/ANALYSE </a>
         </span>
         </button>
 
