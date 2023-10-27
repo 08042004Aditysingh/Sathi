@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../Navbar/Navbar'
 import './Mlpage.css'
 
 const Mlpage = () => {
+
+  useEffect(()=>{
+    fet
+  },[])
+
   return (
     <>
     <div className="machine">
