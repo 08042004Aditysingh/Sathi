@@ -1,8 +1,6 @@
 import React from 'react'
 import './contact.css'
-import {MdOutlineEmail} from 'react-icons/md'
-import {RiMessengerLine} from 'react-icons/ri'
-import {BsWhatsapp} from 'react-icons/bs'
+import Navbar from '../Navbar/Navbar';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 const Contact = () => {
@@ -14,42 +12,61 @@ const Contact = () => {
 
   }
   return (
-    <section id='contact'>
-     <h5>Get Connected to Dermatalogist</h5>
-     <h2>Contact</h2>
+    <>
+    <div className="overall">
+      <Navbar/>
+    <section className='contact1'>
+
+
+
+
+     <h5 className='eight'>Get Connected to Dermatalogist</h5>
+     
      <div className="container contact_container">
-      <div className="contact_options">
-        <article className="contact_option">
-          <MdOutlineEmail className="contact_option-icon"/>
-          <h4>Email</h4>
-          <h5>singhaditya200408apr@gmail.com</h5>
-          <a href="mailto:singhaditya200408apr@gmail.com" target="_blank">Send a message</a>
-        </article>
-        <article className="contact_option">
-          <RiMessengerLine className="contact_option-icon"/>
-          <h4>Messenger</h4>
-          <h5>adiPathalabs</h5>
-          <a href="https://web.whatsapp.com/"target="_blank">Send a message</a>
-        </article>
-        <article className="contact_option">
-          <BsWhatsapp className="contact_option-icon"/>
-          <h4>WhatsApp</h4>
-          <h5>6376872330</h5>
-          <a href="https://api.whatsapp.com/send?phone-+916376872330"target="_blank">Send a message</a>
-        </article>
-      </div>
+     
 
       {/*END OF CONTACT OPTIONS */}
+      <div className="contact">
+
+        <div className="form_area">
+          <p className='title'>FILL UP YOUR DETAILS</p>
       <form ref={form} onSubmit={sendEmail}>
-        <input type="text"name='name'placeholder='Your Full Name' required />
-        <input type="email" name='email' placeholder='Your Email' required />
+
+
+        <div className="form_group">
+
+        <label className="sub_title" htmlFor="name">Name</label>
+        <input type="text" id='name'placeholder='Your Full Name' required />
+
+        </div>
+
+        <div className="form_group">
+
+
+        <label className="sub_title" htmlFor="email">Email</label>
+
+        <input type="email" id='email' placeholder='Your Email' required />
+
+        </div>
+
+        <div className="form_group">
+        <label className="sub_title" htmlFor="message">Message</label>
+
         <textarea name="message" id="10" rows="7"placeholder='Add your Symptoms' required></textarea>
-        <button type='submit' className='btn btn-primary'>Send Message</button>
+
+        </div>
+        <button type='submit' className='btn'>Send Message</button>
       </form>
+
+      </div>
+
+      </div>
      </div>
 
 
     </section>
+    </div>
+    </>
   )
 }
 
