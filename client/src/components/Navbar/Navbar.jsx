@@ -14,8 +14,8 @@ const Navbar = () => {
       <div className="center">
         <ul>
 
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
+            <li><a href="/home">HOME</a></li>
+            <li><a href="/aboutus">ABOUT US</a></li>
             <li><a href="#">CONTACT US</a></li>
             <li><a href="#">BLOG</a></li>
 
