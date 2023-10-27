@@ -41,7 +41,7 @@ function Home(){
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
       backgroundColor: "aqua",
-      mixBlendMode: "darken",
+      mixBlendMode: "difference",
       fontWeight: "bold",
     }
    
