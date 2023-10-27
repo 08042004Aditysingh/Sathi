@@ -1,4 +1,3 @@
-import React from 'react'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -17,7 +16,6 @@ const Navbar = () => {
             <li><a href="/home">HOME</a></li>
             <li><a href="/aboutus">ABOUT US</a></li>
             <li><a href="/contact">CONTACT US</a></li>
-            <li><a href="#">BLOG</a></li>
 
             </ul>
 
@@ -27,9 +25,9 @@ const Navbar = () => {
       <div className="right">
 
       <a href='http://127.0.0.1:5500'><button className='ab'>
-      <span class="button_top"> 
+      <span className="button_top"> 
       
-      <a href='http://127.0.0.1:5500'> SCAN/ANALYSE </a>
+       SCAN/ANALYSE 
         </span>
         </button></a>
 
