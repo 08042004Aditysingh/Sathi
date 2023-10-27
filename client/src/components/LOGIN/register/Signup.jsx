@@ -12,9 +12,9 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3006/register", { name, email, password })
+      .post("http://localhost:3006", { name, email, password })
       .then((result) => console.log(result));
-    navigate("/").catch((err) => console.log(err));
+    navigate("/login").catch((err) => console.log(err));
   };
   return (
     <div className="login-page">
@@ -66,7 +66,7 @@ function SignUp() {
             </button>
           </form>
           <p>Already Have an Account</p>
-          <Link to="/" className="span">
+          <Link to="/login" className="span">
             Login
           </Link>
         </div>

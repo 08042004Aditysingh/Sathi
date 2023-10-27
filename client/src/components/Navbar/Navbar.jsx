@@ -16,7 +16,7 @@ const Navbar = () => {
 
             <li><a href="/home">HOME</a></li>
             <li><a href="/aboutus">ABOUT US</a></li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a href="/contact">CONTACT US</a></li>
             <li><a href="#">BLOG</a></li>
 
             </ul>
@@ -26,12 +26,16 @@ const Navbar = () => {
 
       <div className="right">
 
-      <button className='ab'>
+      <a href='http://127.0.0.1:5500'><button className='ab'>
       <span class="button_top"> 
       
+<<<<<<< HEAD
+       SCAN/ANALYSE 
+=======
       <a href='http://127.0.0.1:5500'> SCAN/ANALYSE </a>
+>>>>>>> 73d3301ad40868f5150e3c3815e59c35d8bf44d4
         </span>
-        </button>
+        </button></a>
 
       </div>
 

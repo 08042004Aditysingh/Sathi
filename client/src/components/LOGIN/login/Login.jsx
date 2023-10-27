@@ -74,10 +74,10 @@ function SignUp() {
           </div>
           <button type="submit" className="buttons">
             LOGIN
-          </button>
+          </button> 
         </form>
 
-        <h4>Don't have Account? <span><a className = "span"href="/register">REGISTER</a> </span></h4>
+        <h4>Don't have Account? <span><a className = "span"href="/">REGISTER</a> </span></h4>
 
         </div>
       </div>
