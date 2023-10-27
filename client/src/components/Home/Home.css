@@ -6,6 +6,9 @@
 .HomePage{
     background-color: #DAFFFB;
     height: 100vh;
+    cursor: none;
+    overflow: hidden;
+    font-family: 'Urbanist', sans-serif;
 
 }
 
@@ -57,8 +60,38 @@
     transform: scale(1.1);
     transition: 0.2s ease-in-out;
     background-color: #64CCC5;
+    background-color: ;
+}
+
+.quote:hover{
+    
 }
 
 
 
 
+  
+
+  
+  .Ani {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background-color: rgb(171, 171, 159); */
+  }
+  
+  .title {
+    font-size: 10rem;
+  }
+  
+  .cursor {
+    background-color: #111;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }

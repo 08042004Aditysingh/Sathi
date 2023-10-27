@@ -24,28 +24,44 @@ function vc2() {
     },      
     {       
       id: "Name",     
-      message: "Hi {previousValue}, Please select your issue",     
+      message: "Hi {previousValue}, Please tell us your issue",     
       trigger: "issues",     
     },      
     {      
       id: "issues",   
       options: [   
         {    
-          value: "React",   
-          label: "React",        
-          trigger: "React",       
+          value: "Skin Guide",   
+          label: "Skin Guide",        
+          trigger: "Skin Guide",       
         },       
-        { value: "Angular", label: "Angular", trigger: "Angular" },       
+        { value: "Disease Information", label: "Disease Information", trigger: "Disease Information" },       
       ],       
     },       
     {       
-      id: "React",       
+      id: "Skin Guide",       
       message:        
-        "Thanks for letting your React issue, Our team will resolve your issue ASAP",        
-      end: true,       
+        "Please Select your skin type",        
+      options:[
+        {
+          value: "oily",   
+          label: "oily",        
+          trigger: "oily",
+        },
+        {
+          value: "Dry",   
+          label: "Dry",        
+          trigger: "Dry",
+        },
+        {
+          value: "normal",   
+          label: "normal",        
+          trigger: "normal",
+        },
+      ]       
     },       
     {       
-      id: "Angular",       
+      id: "Disease Information",       
       message:       
         "Thanks for letting your Angular issue, Our team will resolve your issue ASAP",       
       end: true,       
