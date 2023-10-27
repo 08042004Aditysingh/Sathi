@@ -77,7 +77,13 @@ function Home(){
       
       </div>
 
-      <div ><img className='imgbottom1'src="/asset/sathi1.jpg" alt="" /></div>
+      <div >
+        
+        <img className='imgbottom1'src="/asset/sathi1.jpg" alt="" />
+        
+        
+        
+        </div>
     </div>
 
     
