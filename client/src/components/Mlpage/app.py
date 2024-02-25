@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.template_folder = 'templates'
 
 
-model=pickle.load(open("C:/Users/singh/OneDrive/Desktop/Nexus2.0/Sathi/client/src/components/Mlpage/model.pkl",'rb'))
+model=pickle.load(open("C:/Users/singh/OneDrive/Desktop/Nexus/Nexus2.0/Sathi/client/src/components/Mlpage/model.pkl",'rb'))
 
 @app.route('/',methods=['GET'])
 def hello_world():
@@ -19,7 +19,7 @@ def hello_world():
 @app.route('/',methods=['POST'])
 def predict():
     imagefile = request.files['imagefile']
-    image_path = "C:/Users/singh/OneDrive/Desktop/Nexus2.0/Sathi/client/src/components/Mlpage/images"+imagefile.filename
+    image_path = "C:/Users/singh/OneDrive/Desktop/Nexus/Nexus2.0/Sathi/client/src/components/Mlpage/images"+imagefile.filename
     imagefile.save(image_path)
     
     image1 = np.asarray(Image.open(image_path).resize((32,32)))

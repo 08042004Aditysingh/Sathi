@@ -5,16 +5,25 @@ import { Link } from "react-router-dom";
 import Left from "../login/Loginleft";
 
 function SignUp() {
-  const [name, setName] = useState();
+  const [fullName, setName] = useState();
   const [email, setMail] = useState();
   const [password, setPassword] = useState();
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3006", { name, email, password })
-      .then((result) => console.log(result));
-    navigate("/login").catch((err) => console.log(err));
+      .post("http://localhost:3006", { fullName, email, password })
+      .then((result) => {
+        if (result.data === "User already exists") {
+          alert("User already exists");
+        } else if (result.data === "Please fill all the fields") {
+          alert("Please fill all the fields");
+        } else {
+          navigate("/login");
+          alert("Succesfully Registered! Please Login to continue");
+        }
+      })
+      .catch((err) => console.log(err));
   };
   return (
     <div className="login-page">

@@ -18,12 +18,23 @@ function SignUp() {
     axios
       .post("http://localhost:3006/login", { email, password })
       .then((result) => {
-        console.log(result)
-        if(result.data === "success"){
+        
+        if(result.data === "Success"){
             navigate("/home")
         }
-      });
-    navigate("/home").catch((err) => console.log(err));
+        else if(result.data === "The password is incorrect"){
+          alert("The password is incorrect");
+        }
+        else if(result.data === "The emailid is incorrect"){
+          alert("The emailid is incorrect");
+        }
+        else if(result.data === "Please register first"){
+          alert("Please register first");
+        }
+
+      })
+      .catch(err => console.log(err));
+    // navigate("/home").catch((err) => console.log(err));
   };
   return (
     <div className="login-page">
