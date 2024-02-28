@@ -27,12 +27,13 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 git clone https://github.com/yourusername/saathi.git
-
-2. **Install Python Dependencies:**
+```
+2. **Install Python Dependencies**
 ```bash
 pip install -r requirements.txt
-
+```
 3.**Install Node dependencies**
 ```bash
 cd frontend
 npm install
+```
