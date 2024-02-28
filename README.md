@@ -32,7 +32,7 @@ git clone https://github.com/yourusername/saathi.git
 ```bash
 pip install -r requirements.txt
 ```
-3.**Install Node dependencies**
+3. **Install Node dependencies**
 ```bash
 cd frontend
 npm install
